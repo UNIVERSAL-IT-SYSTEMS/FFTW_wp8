@@ -1,0 +1,1502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{dc0c600a-5892-49b6-b506-cc9547ca7a70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\api">
+      <UniqueIdentifier>{40b29a0f-e194-4c08-9c87-acc689509191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\dft">
+      <UniqueIdentifier>{3f5d7507-956a-4718-85b4-ecaa64b2859f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\dft\scalar">
+      <UniqueIdentifier>{b8b5ffad-594b-411e-ba87-e669a47c0348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\dft\scalar\codelets">
+      <UniqueIdentifier>{363e9c2e-26bc-4379-acd0-513e73130df9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\kernel">
+      <UniqueIdentifier>{80b2d35f-d488-4e92-8705-e1f236d4929c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\rdft">
+      <UniqueIdentifier>{96c92651-fdcf-484d-88ae-b12809510db3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\rdft\scalar">
+      <UniqueIdentifier>{b8044759-2c98-4d9f-bb81-cbb2118a1dbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\rdft\scalar\r2r">
+      <UniqueIdentifier>{38d2f344-071d-4256-8263-d156194c8a6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\rdft\scalar\r2cf">
+      <UniqueIdentifier>{8cca7d67-fb9c-4f8b-97f4-db4dff2c60c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\rdft\scalar\r2cb">
+      <UniqueIdentifier>{fe16e2a9-982c-4c4c-afc7-b575d189901d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\reodft">
+      <UniqueIdentifier>{a138d61b-ec9c-438d-99b7-ac94f60ba950}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\fftw_src\api\api.h">
+      <Filter>Source\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\api\f77funcs.h">
+      <Filter>Source\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\api\fftw3.h">
+      <Filter>Source\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\api\guru.h">
+      <Filter>Source\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\api\guru64.h">
+      <Filter>Source\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\api\mktensor-iodims.h">
+      <Filter>Source\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\api\plan-guru-dft.h">
+      <Filter>Source\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\api\plan-guru-dft-c2r.h">
+      <Filter>Source\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\api\plan-guru-dft-r2c.h">
+      <Filter>Source\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\api\plan-guru-r2r.h">
+      <Filter>Source\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\api\plan-guru-split-dft.h">
+      <Filter>Source\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\api\plan-guru-split-dft-c2r.h">
+      <Filter>Source\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\api\plan-guru-split-dft-r2c.h">
+      <Filter>Source\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\api\x77.h">
+      <Filter>Source\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\dft\codelet-dft.h">
+      <Filter>Source\dft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\dft\ct.h">
+      <Filter>Source\dft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\dft\dft.h">
+      <Filter>Source\dft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\dft\scalar\f.h">
+      <Filter>Source\dft\scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\dft\scalar\n.h">
+      <Filter>Source\dft\scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\dft\scalar\q.h">
+      <Filter>Source\dft\scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\dft\scalar\t.h">
+      <Filter>Source\dft\scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\kernel\cycle.h">
+      <Filter>Source\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\kernel\ifftw.h">
+      <Filter>Source\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\rdft\rdft.h">
+      <Filter>Source\rdft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\rdft\codelet-rdft.h">
+      <Filter>Source\rdft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\rdft\ct-hc2c.h">
+      <Filter>Source\rdft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\rdft\hc2hc.h">
+      <Filter>Source\rdft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\rdft\scalar\hc2cb.h">
+      <Filter>Source\rdft\scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\rdft\scalar\hc2cf.h">
+      <Filter>Source\rdft\scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\rdft\scalar\hf.h">
+      <Filter>Source\rdft\scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\rdft\scalar\r2cb.h">
+      <Filter>Source\rdft\scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\rdft\scalar\r2cbIII.h">
+      <Filter>Source\rdft\scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\rdft\scalar\r2cf.h">
+      <Filter>Source\rdft\scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\rdft\scalar\r2cfII.h">
+      <Filter>Source\rdft\scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\rdft\scalar\r2r.h">
+      <Filter>Source\rdft\scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\rdft\scalar\hb.h">
+      <Filter>Source\rdft\scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\reodft\reodft.h">
+      <Filter>Source\reodft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fftw_src\config.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\fftw_src\api\apiplan.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\execute.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\execute-dft.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\execute-dft-c2r.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\execute-dft-r2c.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\execute-r2r.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\execute-split-dft.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\execute-split-dft-c2r.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\execute-split-dft-r2c.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\export-wisdom.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\export-wisdom-to-file.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\export-wisdom-to-string.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\f77api.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\flops.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\forget-wisdom.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\import-system-wisdom.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\import-wisdom.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\import-wisdom-from-file.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\import-wisdom-from-string.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\malloc.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\mapflags.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\map-r2r-kind.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\mkprinter-file.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\mkprinter-str.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\mktensor-iodims.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\mktensor-iodims64.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\mktensor-rowmajor.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-dft.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-dft-1d.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-dft-2d.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-dft-3d.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-dft-c2r.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-dft-c2r-1d.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-dft-c2r-2d.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-dft-c2r-3d.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-dft-r2c.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-dft-r2c-1d.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-dft-r2c-2d.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-dft-r2c-3d.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-guru64-dft.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-guru64-dft-c2r.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-guru64-dft-r2c.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-guru64-r2r.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-guru64-split-dft.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-guru64-split-dft-c2r.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-guru64-split-dft-r2c.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-guru-dft.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-guru-dft-c2r.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-guru-dft-r2c.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-guru-r2r.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-guru-split-dft.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-guru-split-dft-c2r.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-guru-split-dft-r2c.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-many-dft.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-many-dft-c2r.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-many-dft-r2c.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-many-r2r.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-r2r.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-r2r-1d.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-r2r-2d.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\plan-r2r-3d.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\print-plan.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\rdft2-pad.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\the-planner.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\version.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\bluestein.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\buffered.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\conf.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\ct.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\dftw-direct.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\dftw-directsq.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\dftw-generic.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\dftw-genericbuf.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\direct.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\generic.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\indirect.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\indirect-transpose.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\kdft.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\kdft-dif.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\kdft-difsq.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\kdft-dit.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\nop.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\plan.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\problem.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\rader.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\rank-geq2.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\solve.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\vrank-geq1.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\zero.c">
+      <Filter>Source\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\n.c">
+      <Filter>Source\dft\scalar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\t.c">
+      <Filter>Source\dft\scalar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_4.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_5.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_6.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_7.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_8.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_9.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_10.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_11.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_12.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_13.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_14.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_15.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_16.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_20.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_25.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_32.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_64.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\q1_2.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\q1_3.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\q1_4.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\q1_5.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\q1_6.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\q1_8.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_2.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_3.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_4.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_5.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_6.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_7.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_8.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_9.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_10.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_12.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_15.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_16.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_20.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_25.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_32.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_64.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t2_4.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t2_5.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t2_8.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t2_10.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t2_16.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t2_20.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t2_25.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t2_32.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t2_64.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\codlist.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_2.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_3.c">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\cpy1d.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\cpy2d.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\cpy2d-pair.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\ct.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\debug.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\extract-reim.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\hash.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\iabs.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\kalloc.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\md5.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\md5-1.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\minmax.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\ops.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\pickdim.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\plan.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\planner.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\primes.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\print.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\problem.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\rader.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\scan.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\solver.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\solvtab.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\stride.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\tensor.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\tensor1.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\tensor2.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\tensor3.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\tensor4.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\tensor5.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\tensor7.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\tensor8.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\tensor9.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\tile2d.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\timer.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\transpose.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\trig.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\twiddle.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\align.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\alloc.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\assert.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\awake.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\kernel\buffered.c">
+      <Filter>Source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\plan2.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\problem.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\problem2.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\rank0.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\rank0-rdft2.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\rank-geq2.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\rank-geq2-rdft2.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\rdft2-inplace-strides.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\rdft2-rdft.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\rdft2-strides.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\rdft2-tensor-max-index.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\rdft-dht.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\solve.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\solve2.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\vrank3-transpose.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\vrank-geq1.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\vrank-geq1-rdft2.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\buffered.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\buffered2.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\conf.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\ct-hc2c.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\ct-hc2c-direct.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\dft-r2hc.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\dht-r2hc.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\dht-rader.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\direct2.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\direct-r2c.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\direct-r2r.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\generic.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\hc2hc.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\hc2hc-direct.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\hc2hc-generic.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\indirect.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\khc2c.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\khc2hc.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\kr2c.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\kr2r.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\nop.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\nop2.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\plan.c">
+      <Filter>Source\rdft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\hfb.c">
+      <Filter>Source\rdft\scalar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2c.c">
+      <Filter>Source\rdft\scalar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2r.c">
+      <Filter>Source\rdft\scalar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\hc2c.c">
+      <Filter>Source\rdft\scalar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_9.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_64.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_6.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_7.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_8.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf_12.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf_16.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf_20.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf_32.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf2_4.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf2_8.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf2_16.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf2_20.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf2_32.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft_2.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft_4.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft_6.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft_8.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft_10.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft_12.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft_16.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft_20.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft_32.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft2_4.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft2_8.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft2_16.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft2_20.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft2_32.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_2.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_3.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_4.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_5.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_6.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_7.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_8.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_9.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_10.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_12.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_15.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_16.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_20.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_25.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_32.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_64.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf2_4.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf2_5.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf2_8.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf2_16.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf2_20.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf2_25.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf2_32.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_2.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_3.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_4.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_5.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_6.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_7.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_8.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_9.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_10.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_11.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_12.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_13.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_14.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_15.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_16.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_20.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_25.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_32.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_64.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_128.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_2.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_3.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_4.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_5.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_6.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_7.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_8.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_9.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_10.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_12.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_15.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_16.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_20.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_25.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_32.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_64.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\codlist.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf_2.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf_4.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf_6.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf_8.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf_10.c">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2r\e01_8.c">
+      <Filter>Source\rdft\scalar\r2r</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2r\e10_8.c">
+      <Filter>Source\rdft\scalar\r2r</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2r\codlist.c">
+      <Filter>Source\rdft\scalar\r2r</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\reodft\reodft010e-r2hc.c">
+      <Filter>Source\reodft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\reodft\reodft11e-r2hc.c">
+      <Filter>Source\reodft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\reodft\reodft11e-r2hc-odd.c">
+      <Filter>Source\reodft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\reodft\reodft11e-radix2.c">
+      <Filter>Source\reodft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\reodft\rodft00e-r2hc.c">
+      <Filter>Source\reodft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\reodft\rodft00e-r2hc-pad.c">
+      <Filter>Source\reodft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\reodft\conf.c">
+      <Filter>Source\reodft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\reodft\redft00e-r2hc.c">
+      <Filter>Source\reodft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\reodft\redft00e-r2hc-pad.c">
+      <Filter>Source\reodft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\reodft\reodft00e-splitradix.c">
+      <Filter>Source\reodft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\api\configure.c">
+      <Filter>Source\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\codlist.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_2.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_3.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_4.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_5.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_6.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_7.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_8.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_9.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_10.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_12.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_15.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_16.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_20.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_25.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_32.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_64.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb2_4.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb2_5.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb2_8.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb2_16.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb2_20.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb2_25.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb2_32.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb_2.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb_4.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb_6.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb_8.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb_10.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb_12.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb_16.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb_20.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb_32.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb2_4.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb2_8.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb2_16.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb2_20.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb2_32.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft_2.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft_4.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft_6.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft_8.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft_10.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft_12.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft_16.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft_20.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft_32.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft2_4.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft2_8.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft2_16.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft2_20.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft2_32.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_2.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_3.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_4.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_5.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_6.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_7.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_8.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_9.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_10.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_11.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_12.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_13.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_14.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_15.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_16.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_20.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_25.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_32.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_64.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_128.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_2.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_3.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_4.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_5.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_10.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_12.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_15.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_16.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_20.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_25.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_32.c">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\fftw_src\api\f03api.sh">
+      <Filter>Source\api</Filter>
+    </None>
+    <None Include="..\fftw_src\api\fftw3.f">
+      <Filter>Source\api</Filter>
+    </None>
+    <None Include="..\fftw_src\api\fftw3.f03.in">
+      <Filter>Source\api</Filter>
+    </None>
+    <None Include="..\fftw_src\api\fftw3l.f03">
+      <Filter>Source\api</Filter>
+    </None>
+    <None Include="..\fftw_src\api\fftw3q.f03">
+      <Filter>Source\api</Filter>
+    </None>
+    <None Include="..\fftw_src\api\genf03.pl">
+      <Filter>Source\api</Filter>
+    </None>
+    <None Include="..\fftw_src\api\Makefile.am">
+      <Filter>Source\api</Filter>
+    </None>
+    <None Include="..\fftw_src\api\Makefile.in">
+      <Filter>Source\api</Filter>
+    </None>
+    <None Include="..\fftw_src\dft\Makefile.am">
+      <Filter>Source\dft</Filter>
+    </None>
+    <None Include="..\fftw_src\dft\Makefile.in">
+      <Filter>Source\dft</Filter>
+    </None>
+    <None Include="..\fftw_src\dft\scalar\Makefile.am">
+      <Filter>Source\dft\scalar</Filter>
+    </None>
+    <None Include="..\fftw_src\dft\scalar\Makefile.in">
+      <Filter>Source\dft\scalar</Filter>
+    </None>
+    <None Include="..\fftw_src\dft\scalar\codelets\Makefile.am">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </None>
+    <None Include="..\fftw_src\dft\scalar\codelets\Makefile.in">
+      <Filter>Source\dft\scalar\codelets</Filter>
+    </None>
+    <None Include="..\fftw_src\kernel\Makefile.am">
+      <Filter>Source\kernel</Filter>
+    </None>
+    <None Include="..\fftw_src\kernel\Makefile.in">
+      <Filter>Source\kernel</Filter>
+    </None>
+    <None Include="..\fftw_src\rdft\Makefile.am">
+      <Filter>Source\rdft</Filter>
+    </None>
+    <None Include="..\fftw_src\rdft\Makefile.in">
+      <Filter>Source\rdft</Filter>
+    </None>
+    <None Include="..\fftw_src\rdft\scalar\Makefile.am">
+      <Filter>Source\rdft\scalar</Filter>
+    </None>
+    <None Include="..\fftw_src\rdft\scalar\Makefile.in">
+      <Filter>Source\rdft\scalar</Filter>
+    </None>
+    <None Include="..\fftw_src\rdft\scalar\r2cf\Makefile.am">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </None>
+    <None Include="..\fftw_src\rdft\scalar\r2cf\Makefile.in">
+      <Filter>Source\rdft\scalar\r2cf</Filter>
+    </None>
+    <None Include="..\fftw_src\rdft\scalar\r2r\Makefile.am">
+      <Filter>Source\rdft\scalar\r2r</Filter>
+    </None>
+    <None Include="..\fftw_src\rdft\scalar\r2r\Makefile.in">
+      <Filter>Source\rdft\scalar\r2r</Filter>
+    </None>
+    <None Include="..\fftw_src\reodft\Makefile.am">
+      <Filter>Source\reodft</Filter>
+    </None>
+    <None Include="..\fftw_src\reodft\Makefile.in">
+      <Filter>Source\reodft</Filter>
+    </None>
+    <None Include="..\fftw_src\rdft\scalar\r2cb\Makefile.am">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </None>
+    <None Include="..\fftw_src\rdft\scalar\r2cb\Makefile.in">
+      <Filter>Source\rdft\scalar\r2cb</Filter>
+    </None>
+  </ItemGroup>
+</Project>

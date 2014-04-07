@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{d74b073c-8913-4875-aedc-919a0b8a4648}</ProjectGuid>
+    <RootNamespace>FFTW</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)\Build\$(Platform)\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)\Build\$(Platform)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(SolutionDir)\Build\$(Platform)\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <OutDir>$(SolutionDir)\Build\$(Platform)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\fftw_src\;$(ProjectDir)\..\fftw_src\api;$(ProjectDir)\..\fftw_src\kernel;$(ProjectDir)\..\fftw_src\dft;$(ProjectDir)\..\fftw_src\dft\simd;$(ProjectDir)\..\fftw_src\dft\scalar;$(ProjectDir)\..\fftw_src\rdft;$(ProjectDir)\..\fftw_src\rdft\simd;$(ProjectDir)\..\fftw_src\rdft\scalar;$(ProjectDir)\..\fftw_src\reodft;$(ProjectDir)\..\fftw_src\simd-support;$(ProjectDir)\..\fftw_src\threads</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)\%(RelativeDir)\</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\fftw_src\;$(ProjectDir)\..\fftw_src\api;$(ProjectDir)\..\fftw_src\kernel;$(ProjectDir)\..\fftw_src\dft;$(ProjectDir)\..\fftw_src\dft\simd;$(ProjectDir)\..\fftw_src\dft\scalar;$(ProjectDir)\..\fftw_src\rdft;$(ProjectDir)\..\fftw_src\rdft\simd;$(ProjectDir)\..\fftw_src\rdft\scalar;$(ProjectDir)\..\fftw_src\reodft;$(ProjectDir)\..\fftw_src\simd-support;$(ProjectDir)\..\fftw_src\threads</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)\%(RelativeDir)\</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\fftw_src\;$(ProjectDir)\..\fftw_src\api;$(ProjectDir)\..\fftw_src\kernel;$(ProjectDir)\..\fftw_src\dft;$(ProjectDir)\..\fftw_src\dft\simd;$(ProjectDir)\..\fftw_src\dft\scalar;$(ProjectDir)\..\fftw_src\rdft;$(ProjectDir)\..\fftw_src\rdft\simd;$(ProjectDir)\..\fftw_src\rdft\scalar;$(ProjectDir)\..\fftw_src\reodft;$(ProjectDir)\..\fftw_src\simd-support;$(ProjectDir)\..\fftw_src\threads</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)\%(RelativeDir)\</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\fftw_src\;$(ProjectDir)\..\fftw_src\api;$(ProjectDir)\..\fftw_src\kernel;$(ProjectDir)\..\fftw_src\dft;$(ProjectDir)\..\fftw_src\dft\simd;$(ProjectDir)\..\fftw_src\dft\scalar;$(ProjectDir)\..\fftw_src\rdft;$(ProjectDir)\..\fftw_src\rdft\simd;$(ProjectDir)\..\fftw_src\rdft\scalar;$(ProjectDir)\..\fftw_src\reodft;$(ProjectDir)\..\fftw_src\simd-support;$(ProjectDir)\..\fftw_src\threads</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)\%(RelativeDir)\</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="Windows">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="platform.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\fftw_src\api\api.h" />
+    <ClInclude Include="..\fftw_src\api\f77funcs.h" />
+    <ClInclude Include="..\fftw_src\api\fftw3.h" />
+    <ClInclude Include="..\fftw_src\api\guru.h" />
+    <ClInclude Include="..\fftw_src\api\guru64.h" />
+    <ClInclude Include="..\fftw_src\api\mktensor-iodims.h" />
+    <ClInclude Include="..\fftw_src\api\plan-guru-dft-c2r.h" />
+    <ClInclude Include="..\fftw_src\api\plan-guru-dft-r2c.h" />
+    <ClInclude Include="..\fftw_src\api\plan-guru-dft.h" />
+    <ClInclude Include="..\fftw_src\api\plan-guru-r2r.h" />
+    <ClInclude Include="..\fftw_src\api\plan-guru-split-dft-c2r.h" />
+    <ClInclude Include="..\fftw_src\api\plan-guru-split-dft-r2c.h" />
+    <ClInclude Include="..\fftw_src\api\plan-guru-split-dft.h" />
+    <ClInclude Include="..\fftw_src\api\x77.h" />
+    <ClInclude Include="..\fftw_src\config.h" />
+    <ClInclude Include="..\fftw_src\dft\codelet-dft.h" />
+    <ClInclude Include="..\fftw_src\dft\ct.h" />
+    <ClInclude Include="..\fftw_src\dft\dft.h" />
+    <ClInclude Include="..\fftw_src\dft\scalar\f.h" />
+    <ClInclude Include="..\fftw_src\dft\scalar\n.h" />
+    <ClInclude Include="..\fftw_src\dft\scalar\q.h" />
+    <ClInclude Include="..\fftw_src\dft\scalar\t.h" />
+    <ClInclude Include="..\fftw_src\kernel\cycle.h" />
+    <ClInclude Include="..\fftw_src\kernel\ifftw.h" />
+    <ClInclude Include="..\fftw_src\rdft\codelet-rdft.h" />
+    <ClInclude Include="..\fftw_src\rdft\ct-hc2c.h" />
+    <ClInclude Include="..\fftw_src\rdft\hc2hc.h" />
+    <ClInclude Include="..\fftw_src\rdft\rdft.h" />
+    <ClInclude Include="..\fftw_src\rdft\scalar\hb.h" />
+    <ClInclude Include="..\fftw_src\rdft\scalar\hc2cb.h" />
+    <ClInclude Include="..\fftw_src\rdft\scalar\hc2cf.h" />
+    <ClInclude Include="..\fftw_src\rdft\scalar\hf.h" />
+    <ClInclude Include="..\fftw_src\rdft\scalar\r2cb.h" />
+    <ClInclude Include="..\fftw_src\rdft\scalar\r2cbIII.h" />
+    <ClInclude Include="..\fftw_src\rdft\scalar\r2cf.h" />
+    <ClInclude Include="..\fftw_src\rdft\scalar\r2cfII.h" />
+    <ClInclude Include="..\fftw_src\rdft\scalar\r2r.h" />
+    <ClInclude Include="..\fftw_src\reodft\reodft.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\fftw_src\api\apiplan.c" />
+    <ClCompile Include="..\fftw_src\api\configure.c" />
+    <ClCompile Include="..\fftw_src\api\execute-dft-c2r.c" />
+    <ClCompile Include="..\fftw_src\api\execute-dft-r2c.c" />
+    <ClCompile Include="..\fftw_src\api\execute-dft.c" />
+    <ClCompile Include="..\fftw_src\api\execute-r2r.c" />
+    <ClCompile Include="..\fftw_src\api\execute-split-dft-c2r.c" />
+    <ClCompile Include="..\fftw_src\api\execute-split-dft-r2c.c" />
+    <ClCompile Include="..\fftw_src\api\execute-split-dft.c" />
+    <ClCompile Include="..\fftw_src\api\execute.c" />
+    <ClCompile Include="..\fftw_src\api\export-wisdom-to-file.c" />
+    <ClCompile Include="..\fftw_src\api\export-wisdom-to-string.c" />
+    <ClCompile Include="..\fftw_src\api\export-wisdom.c" />
+    <ClCompile Include="..\fftw_src\api\f77api.c" />
+    <ClCompile Include="..\fftw_src\api\flops.c" />
+    <ClCompile Include="..\fftw_src\api\forget-wisdom.c" />
+    <ClCompile Include="..\fftw_src\api\import-system-wisdom.c" />
+    <ClCompile Include="..\fftw_src\api\import-wisdom-from-file.c" />
+    <ClCompile Include="..\fftw_src\api\import-wisdom-from-string.c" />
+    <ClCompile Include="..\fftw_src\api\import-wisdom.c" />
+    <ClCompile Include="..\fftw_src\api\malloc.c" />
+    <ClCompile Include="..\fftw_src\api\map-r2r-kind.c" />
+    <ClCompile Include="..\fftw_src\api\mapflags.c" />
+    <ClCompile Include="..\fftw_src\api\mkprinter-file.c" />
+    <ClCompile Include="..\fftw_src\api\mkprinter-str.c" />
+    <ClCompile Include="..\fftw_src\api\mktensor-iodims.c" />
+    <ClCompile Include="..\fftw_src\api\mktensor-iodims64.c" />
+    <ClCompile Include="..\fftw_src\api\mktensor-rowmajor.c" />
+    <ClCompile Include="..\fftw_src\api\plan-dft-1d.c" />
+    <ClCompile Include="..\fftw_src\api\plan-dft-2d.c" />
+    <ClCompile Include="..\fftw_src\api\plan-dft-3d.c" />
+    <ClCompile Include="..\fftw_src\api\plan-dft-c2r-1d.c" />
+    <ClCompile Include="..\fftw_src\api\plan-dft-c2r-2d.c" />
+    <ClCompile Include="..\fftw_src\api\plan-dft-c2r-3d.c" />
+    <ClCompile Include="..\fftw_src\api\plan-dft-c2r.c" />
+    <ClCompile Include="..\fftw_src\api\plan-dft-r2c-1d.c" />
+    <ClCompile Include="..\fftw_src\api\plan-dft-r2c-2d.c" />
+    <ClCompile Include="..\fftw_src\api\plan-dft-r2c-3d.c" />
+    <ClCompile Include="..\fftw_src\api\plan-dft-r2c.c" />
+    <ClCompile Include="..\fftw_src\api\plan-dft.c" />
+    <ClCompile Include="..\fftw_src\api\plan-guru-dft-c2r.c" />
+    <ClCompile Include="..\fftw_src\api\plan-guru-dft-r2c.c" />
+    <ClCompile Include="..\fftw_src\api\plan-guru-dft.c" />
+    <ClCompile Include="..\fftw_src\api\plan-guru-r2r.c" />
+    <ClCompile Include="..\fftw_src\api\plan-guru-split-dft-c2r.c" />
+    <ClCompile Include="..\fftw_src\api\plan-guru-split-dft-r2c.c" />
+    <ClCompile Include="..\fftw_src\api\plan-guru-split-dft.c" />
+    <ClCompile Include="..\fftw_src\api\plan-guru64-dft-c2r.c" />
+    <ClCompile Include="..\fftw_src\api\plan-guru64-dft-r2c.c" />
+    <ClCompile Include="..\fftw_src\api\plan-guru64-dft.c" />
+    <ClCompile Include="..\fftw_src\api\plan-guru64-r2r.c" />
+    <ClCompile Include="..\fftw_src\api\plan-guru64-split-dft-c2r.c" />
+    <ClCompile Include="..\fftw_src\api\plan-guru64-split-dft-r2c.c" />
+    <ClCompile Include="..\fftw_src\api\plan-guru64-split-dft.c" />
+    <ClCompile Include="..\fftw_src\api\plan-many-dft-c2r.c" />
+    <ClCompile Include="..\fftw_src\api\plan-many-dft-r2c.c" />
+    <ClCompile Include="..\fftw_src\api\plan-many-dft.c" />
+    <ClCompile Include="..\fftw_src\api\plan-many-r2r.c" />
+    <ClCompile Include="..\fftw_src\api\plan-r2r-1d.c" />
+    <ClCompile Include="..\fftw_src\api\plan-r2r-2d.c" />
+    <ClCompile Include="..\fftw_src\api\plan-r2r-3d.c" />
+    <ClCompile Include="..\fftw_src\api\plan-r2r.c" />
+    <ClCompile Include="..\fftw_src\api\print-plan.c" />
+    <ClCompile Include="..\fftw_src\api\rdft2-pad.c" />
+    <ClCompile Include="..\fftw_src\api\the-planner.c" />
+    <ClCompile Include="..\fftw_src\api\version.c" />
+    <ClCompile Include="..\fftw_src\dft\bluestein.c" />
+    <ClCompile Include="..\fftw_src\dft\buffered.c" />
+    <ClCompile Include="..\fftw_src\dft\conf.c" />
+    <ClCompile Include="..\fftw_src\dft\ct.c" />
+    <ClCompile Include="..\fftw_src\dft\dftw-direct.c" />
+    <ClCompile Include="..\fftw_src\dft\dftw-directsq.c" />
+    <ClCompile Include="..\fftw_src\dft\dftw-generic.c" />
+    <ClCompile Include="..\fftw_src\dft\dftw-genericbuf.c" />
+    <ClCompile Include="..\fftw_src\dft\direct.c" />
+    <ClCompile Include="..\fftw_src\dft\generic.c" />
+    <ClCompile Include="..\fftw_src\dft\indirect-transpose.c" />
+    <ClCompile Include="..\fftw_src\dft\indirect.c" />
+    <ClCompile Include="..\fftw_src\dft\kdft-dif.c" />
+    <ClCompile Include="..\fftw_src\dft\kdft-difsq.c" />
+    <ClCompile Include="..\fftw_src\dft\kdft-dit.c" />
+    <ClCompile Include="..\fftw_src\dft\kdft.c" />
+    <ClCompile Include="..\fftw_src\dft\nop.c" />
+    <ClCompile Include="..\fftw_src\dft\plan.c" />
+    <ClCompile Include="..\fftw_src\dft\problem.c" />
+    <ClCompile Include="..\fftw_src\dft\rader.c" />
+    <ClCompile Include="..\fftw_src\dft\rank-geq2.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\codlist.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_10.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_11.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_12.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_13.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_14.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_15.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_16.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_2.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_20.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_25.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_3.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_32.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_4.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_5.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_6.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_64.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_7.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_8.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\n1_9.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\q1_2.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\q1_3.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\q1_4.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\q1_5.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\q1_6.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\q1_8.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_10.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_12.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_15.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_16.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_2.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_20.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_25.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_3.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_32.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_4.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_5.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_6.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_64.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_7.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_8.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t1_9.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t2_10.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t2_16.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t2_20.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t2_25.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t2_32.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t2_4.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t2_5.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t2_64.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\codelets\t2_8.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\n.c" />
+    <ClCompile Include="..\fftw_src\dft\scalar\t.c" />
+    <ClCompile Include="..\fftw_src\dft\solve.c" />
+    <ClCompile Include="..\fftw_src\dft\vrank-geq1.c" />
+    <ClCompile Include="..\fftw_src\dft\zero.c" />
+    <ClCompile Include="..\fftw_src\kernel\align.c" />
+    <ClCompile Include="..\fftw_src\kernel\alloc.c" />
+    <ClCompile Include="..\fftw_src\kernel\assert.c" />
+    <ClCompile Include="..\fftw_src\kernel\awake.c" />
+    <ClCompile Include="..\fftw_src\kernel\buffered.c" />
+    <ClCompile Include="..\fftw_src\kernel\cpy1d.c" />
+    <ClCompile Include="..\fftw_src\kernel\cpy2d-pair.c" />
+    <ClCompile Include="..\fftw_src\kernel\cpy2d.c" />
+    <ClCompile Include="..\fftw_src\kernel\ct.c" />
+    <ClCompile Include="..\fftw_src\kernel\debug.c" />
+    <ClCompile Include="..\fftw_src\kernel\extract-reim.c" />
+    <ClCompile Include="..\fftw_src\kernel\hash.c" />
+    <ClCompile Include="..\fftw_src\kernel\iabs.c" />
+    <ClCompile Include="..\fftw_src\kernel\kalloc.c" />
+    <ClCompile Include="..\fftw_src\kernel\md5-1.c" />
+    <ClCompile Include="..\fftw_src\kernel\md5.c" />
+    <ClCompile Include="..\fftw_src\kernel\minmax.c" />
+    <ClCompile Include="..\fftw_src\kernel\ops.c" />
+    <ClCompile Include="..\fftw_src\kernel\pickdim.c" />
+    <ClCompile Include="..\fftw_src\kernel\plan.c" />
+    <ClCompile Include="..\fftw_src\kernel\planner.c" />
+    <ClCompile Include="..\fftw_src\kernel\primes.c" />
+    <ClCompile Include="..\fftw_src\kernel\print.c" />
+    <ClCompile Include="..\fftw_src\kernel\problem.c" />
+    <ClCompile Include="..\fftw_src\kernel\rader.c" />
+    <ClCompile Include="..\fftw_src\kernel\scan.c" />
+    <ClCompile Include="..\fftw_src\kernel\solver.c" />
+    <ClCompile Include="..\fftw_src\kernel\solvtab.c" />
+    <ClCompile Include="..\fftw_src\kernel\stride.c" />
+    <ClCompile Include="..\fftw_src\kernel\tensor.c" />
+    <ClCompile Include="..\fftw_src\kernel\tensor1.c" />
+    <ClCompile Include="..\fftw_src\kernel\tensor2.c" />
+    <ClCompile Include="..\fftw_src\kernel\tensor3.c" />
+    <ClCompile Include="..\fftw_src\kernel\tensor4.c" />
+    <ClCompile Include="..\fftw_src\kernel\tensor5.c" />
+    <ClCompile Include="..\fftw_src\kernel\tensor7.c" />
+    <ClCompile Include="..\fftw_src\kernel\tensor8.c" />
+    <ClCompile Include="..\fftw_src\kernel\tensor9.c" />
+    <ClCompile Include="..\fftw_src\kernel\tile2d.c" />
+    <ClCompile Include="..\fftw_src\kernel\timer.c" />
+    <ClCompile Include="..\fftw_src\kernel\transpose.c" />
+    <ClCompile Include="..\fftw_src\kernel\trig.c" />
+    <ClCompile Include="..\fftw_src\kernel\twiddle.c" />
+    <ClCompile Include="..\fftw_src\rdft\buffered.c" />
+    <ClCompile Include="..\fftw_src\rdft\buffered2.c" />
+    <ClCompile Include="..\fftw_src\rdft\conf.c" />
+    <ClCompile Include="..\fftw_src\rdft\ct-hc2c-direct.c" />
+    <ClCompile Include="..\fftw_src\rdft\ct-hc2c.c" />
+    <ClCompile Include="..\fftw_src\rdft\dft-r2hc.c" />
+    <ClCompile Include="..\fftw_src\rdft\dht-r2hc.c" />
+    <ClCompile Include="..\fftw_src\rdft\dht-rader.c" />
+    <ClCompile Include="..\fftw_src\rdft\direct-r2c.c" />
+    <ClCompile Include="..\fftw_src\rdft\direct-r2r.c" />
+    <ClCompile Include="..\fftw_src\rdft\direct2.c" />
+    <ClCompile Include="..\fftw_src\rdft\generic.c" />
+    <ClCompile Include="..\fftw_src\rdft\hc2hc-direct.c" />
+    <ClCompile Include="..\fftw_src\rdft\hc2hc-generic.c" />
+    <ClCompile Include="..\fftw_src\rdft\hc2hc.c" />
+    <ClCompile Include="..\fftw_src\rdft\indirect.c" />
+    <ClCompile Include="..\fftw_src\rdft\khc2c.c" />
+    <ClCompile Include="..\fftw_src\rdft\khc2hc.c" />
+    <ClCompile Include="..\fftw_src\rdft\kr2c.c" />
+    <ClCompile Include="..\fftw_src\rdft\kr2r.c" />
+    <ClCompile Include="..\fftw_src\rdft\nop.c" />
+    <ClCompile Include="..\fftw_src\rdft\nop2.c" />
+    <ClCompile Include="..\fftw_src\rdft\plan.c" />
+    <ClCompile Include="..\fftw_src\rdft\plan2.c" />
+    <ClCompile Include="..\fftw_src\rdft\problem.c" />
+    <ClCompile Include="..\fftw_src\rdft\problem2.c" />
+    <ClCompile Include="..\fftw_src\rdft\rank-geq2-rdft2.c" />
+    <ClCompile Include="..\fftw_src\rdft\rank-geq2.c" />
+    <ClCompile Include="..\fftw_src\rdft\rank0-rdft2.c" />
+    <ClCompile Include="..\fftw_src\rdft\rank0.c" />
+    <ClCompile Include="..\fftw_src\rdft\rdft-dht.c" />
+    <ClCompile Include="..\fftw_src\rdft\rdft2-inplace-strides.c" />
+    <ClCompile Include="..\fftw_src\rdft\rdft2-rdft.c" />
+    <ClCompile Include="..\fftw_src\rdft\rdft2-strides.c" />
+    <ClCompile Include="..\fftw_src\rdft\rdft2-tensor-max-index.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\hc2c.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\hfb.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2c.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\codlist.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb2_16.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb2_20.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb2_25.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb2_32.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb2_4.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb2_5.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb2_8.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_10.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_12.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_15.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_16.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_2.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_20.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_25.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_3.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_32.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_4.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_5.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_6.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_64.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_7.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_8.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hb_9.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb2_16.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb2_20.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb2_32.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb2_4.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb2_8.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft2_16.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft2_20.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft2_32.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft2_4.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft2_8.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft_10.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft_12.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft_16.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft_2.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft_20.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft_32.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft_4.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft_6.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cbdft_8.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb_10.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb_12.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb_16.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb_2.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb_20.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb_32.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb_4.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb_6.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\hc2cb_8.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_10.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_12.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_15.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_16.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_2.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_20.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_25.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_3.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_32.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_4.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_5.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_6.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_64.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_7.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_8.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cbIII_9.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_10.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_11.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_12.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_128.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_13.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_14.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_15.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_16.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_2.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_20.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_25.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_3.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_32.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_4.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_5.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_6.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_64.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_7.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_8.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cb\r2cb_9.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\codlist.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf2_16.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf2_20.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf2_32.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf2_4.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf2_8.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft2_16.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft2_20.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft2_32.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft2_4.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft2_8.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft_10.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft_12.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft_16.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft_2.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft_20.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft_32.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft_4.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft_6.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cfdft_8.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf_10.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf_12.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf_16.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf_2.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf_20.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf_32.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf_4.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf_6.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hc2cf_8.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf2_16.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf2_20.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf2_25.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf2_32.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf2_4.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf2_5.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf2_8.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_10.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_12.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_15.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_16.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_2.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_20.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_25.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_3.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_32.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_4.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_5.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_6.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_64.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_7.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_8.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\hf_9.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_10.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_12.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_15.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_16.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_2.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_20.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_25.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_3.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_32.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_4.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_5.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_6.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_64.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_7.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_8.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cfII_9.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_10.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_11.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_12.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_128.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_13.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_14.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_15.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_16.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_2.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_20.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_25.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_3.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_32.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_4.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_5.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_6.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_64.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_7.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_8.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2cf\r2cf_9.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2r.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2r\codlist.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2r\e01_8.c" />
+    <ClCompile Include="..\fftw_src\rdft\scalar\r2r\e10_8.c" />
+    <ClCompile Include="..\fftw_src\rdft\solve.c" />
+    <ClCompile Include="..\fftw_src\rdft\solve2.c" />
+    <ClCompile Include="..\fftw_src\rdft\vrank-geq1-rdft2.c" />
+    <ClCompile Include="..\fftw_src\rdft\vrank-geq1.c" />
+    <ClCompile Include="..\fftw_src\rdft\vrank3-transpose.c" />
+    <ClCompile Include="..\fftw_src\reodft\conf.c" />
+    <ClCompile Include="..\fftw_src\reodft\redft00e-r2hc-pad.c" />
+    <ClCompile Include="..\fftw_src\reodft\redft00e-r2hc.c" />
+    <ClCompile Include="..\fftw_src\reodft\reodft00e-splitradix.c" />
+    <ClCompile Include="..\fftw_src\reodft\reodft010e-r2hc.c" />
+    <ClCompile Include="..\fftw_src\reodft\reodft11e-r2hc-odd.c" />
+    <ClCompile Include="..\fftw_src\reodft\reodft11e-r2hc.c" />
+    <ClCompile Include="..\fftw_src\reodft\reodft11e-radix2.c" />
+    <ClCompile Include="..\fftw_src\reodft\rodft00e-r2hc-pad.c" />
+    <ClCompile Include="..\fftw_src\reodft\rodft00e-r2hc.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\fftw_src\api\f03api.sh" />
+    <None Include="..\fftw_src\api\fftw3.f" />
+    <None Include="..\fftw_src\api\fftw3.f03.in" />
+    <None Include="..\fftw_src\api\fftw3l.f03" />
+    <None Include="..\fftw_src\api\fftw3q.f03" />
+    <None Include="..\fftw_src\api\genf03.pl" />
+    <None Include="..\fftw_src\api\Makefile.am" />
+    <None Include="..\fftw_src\api\Makefile.in" />
+    <None Include="..\fftw_src\dft\Makefile.am" />
+    <None Include="..\fftw_src\dft\Makefile.in" />
+    <None Include="..\fftw_src\dft\scalar\codelets\Makefile.am" />
+    <None Include="..\fftw_src\dft\scalar\codelets\Makefile.in" />
+    <None Include="..\fftw_src\dft\scalar\Makefile.am" />
+    <None Include="..\fftw_src\dft\scalar\Makefile.in" />
+    <None Include="..\fftw_src\kernel\Makefile.am" />
+    <None Include="..\fftw_src\kernel\Makefile.in" />
+    <None Include="..\fftw_src\rdft\Makefile.am" />
+    <None Include="..\fftw_src\rdft\Makefile.in" />
+    <None Include="..\fftw_src\rdft\scalar\Makefile.am" />
+    <None Include="..\fftw_src\rdft\scalar\Makefile.in" />
+    <None Include="..\fftw_src\rdft\scalar\r2cb\Makefile.am" />
+    <None Include="..\fftw_src\rdft\scalar\r2cb\Makefile.in" />
+    <None Include="..\fftw_src\rdft\scalar\r2cf\Makefile.am" />
+    <None Include="..\fftw_src\rdft\scalar\r2cf\Makefile.in" />
+    <None Include="..\fftw_src\rdft\scalar\r2r\Makefile.am" />
+    <None Include="..\fftw_src\rdft\scalar\r2r\Makefile.in" />
+    <None Include="..\fftw_src\reodft\Makefile.am" />
+    <None Include="..\fftw_src\reodft\Makefile.in" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsPhone\v$(TargetPlatformVersion)\Microsoft.Cpp.WindowsPhone.$(TargetPlatformVersion).targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
